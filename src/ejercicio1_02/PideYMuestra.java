@@ -1,14 +1,6 @@
 package ejercicio1_02;
 
 public class PideYMuestra {
-
-	// Clase PideYGuarda
-	public static void PideYGuarda(double numeros[]) {
-		for (int i = 0; i < numeros.length; i++) {
-			System.out.println("Inserta un numero");
-			numeros[i] = Main.sc.nextDouble();
-		}
-	} // Fin Clase PideYGuarda
 	
 	// Clase MuestraTabla
 	public static void MuestraTabla(double numeros[]) {
