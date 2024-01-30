@@ -32,7 +32,7 @@ public class Main {
 				do {
 					try {
 						System.out.println("Inserta una nota");
-						System.out.println("Alumno " + i);
+						System.out.println("Alumno " + i+1);
 						System.out.println("Asignatura " + j);
 						notas[i][j] = sc.nextInt();
 						if (notas[i][j] < 0 || notas[i][j] > 10) {

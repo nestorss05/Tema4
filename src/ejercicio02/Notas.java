@@ -15,7 +15,7 @@ public class Notas {
 	 */
 	public static void notasAlumno(int notas[][]) {
 		for (int i = 0; i < notas.length; i++) {
-			System.out.println("Alumno " + i + ": " + Arrays.toString(notas[i]));
+			System.out.println("Alumno " + i+1 + ": " + Arrays.toString(notas[i]));
 		}
 	}
 	
