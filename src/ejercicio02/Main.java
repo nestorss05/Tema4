@@ -1,17 +1,34 @@
 package ejercicio02;
 
-import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * En la clase Main se le pedira al usuario notas de ciertos alumnos y ciertas
+ * asignaturas
+ * 
+ * @author Nestor Sanchez
+ * 
+ */
 public class Main {
 
+	/**
+	 * Codigo principal
+	 */
 	public static void main(String[] args) {
-		int notas[][] = new int[5][4];
+
+		// int notas[][]: array donde se guardaran alumnos y notas
+		int notas[][] = new int[4][5];
+
+		// boolean pase: variable que indica si la respuesta es valida
 		boolean pase = false;
+
+		// Inicia el Scanner
 		Scanner sc = new Scanner(System.in);
-		for (int i = 0; i<notas.length; i++) {
-			for (int j = 0; j<notas[i].length; j++) {
+
+		// For: mediante los alumnos, pidele al usuario una nota de una asignatura
+		for (int i = 0; i < notas.length; i++) {
+			for (int j = 0; j < notas[i].length; j++) {
 				do {
 					try {
 						System.out.println("Inserta una nota");
@@ -31,9 +48,14 @@ public class Main {
 				} while (!pase);
 				pase = false;
 			}
-		}
-		System.out.println(Arrays.deepToString(notas));
+		} // Fin For
+
+		// Muestra las notas por pantalla mediante la funcion notasAlumno
+		Notas.notasAlumno(notas);
+
+		// Cierra el Scanner
 		sc.close();
+
 	}
 
 }
