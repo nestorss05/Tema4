@@ -13,12 +13,14 @@ import java.util.Scanner;
 public class Main {
 
 	/**
-	 * Codigo principal
+	 * final int notas[][]: array donde se guardaran alumnos y notas
+	 */
+	public static final int NOTAS[][] = new int[4][5];
+	
+	/**
+	 * Codigo principal del programa
 	 */
 	public static void main(String[] args) {
-
-		// int notas[][]: array donde se guardaran alumnos y notas
-		int notas[][] = new int[4][5];
 
 		// boolean pase: variable que indica si la respuesta es valida
 		boolean pase = false;
@@ -27,15 +29,15 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 
 		// For: mediante los alumnos, pidele al usuario una nota de una asignatura
-		for (int i = 0; i < notas.length; i++) {
-			for (int j = 0; j < notas[i].length; j++) {
+		for (int i = 0; i < NOTAS.length; i++) {
+			for (int j = 0; j < NOTAS[i].length; j++) {
 				do {
 					try {
 						System.out.println("Inserta una nota");
 						System.out.println("Alumno " + i+1);
 						System.out.println("Asignatura " + j);
-						notas[i][j] = sc.nextInt();
-						if (notas[i][j] < 0 || notas[i][j] > 10) {
+						NOTAS[i][j] = sc.nextInt();
+						if (NOTAS[i][j] < 0 || NOTAS[i][j] > 10) {
 							System.out.println("ERROR: Nota fuera del rango");
 						} else {
 							pase = true;
@@ -51,7 +53,7 @@ public class Main {
 		} // Fin For
 
 		// Muestra las notas por pantalla mediante la funcion notasAlumno
-		Notas.notasAlumno(notas);
+		Notas.notasAlumno(NOTAS);
 
 		// Cierra el Scanner
 		sc.close();

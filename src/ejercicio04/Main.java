@@ -7,14 +7,18 @@ package ejercicio04;
 public class Main {
 
 	/**
-	 * Funcion donde se creara el array y se llamaran a las demas funciones
+	 * final int tabla[][]: array que contendra la tabla de multiplicar
+	 */
+	public static final int TABLA[][] = new int[10][10];
+	
+	/**
+	 * Funcion donde se llamaran a las demas funciones
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		
-		int tabla[][] = new int[10][10];
-		ModifTabla.tablaMultiplicar(tabla);
-		ModifTabla.imprimirTabla(tabla);
+		ModifTabla.tablaMultiplicar(TABLA);
+		ModifTabla.imprimirTabla(TABLA);
 		
 	} // Fin Clase Main
 

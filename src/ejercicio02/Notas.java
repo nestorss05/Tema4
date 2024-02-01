@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class Notas {
 
 	/**
-	 * notasAlumno: se encarga de mostrarte las notas de cada alumno y todas sus asignaturas
+	 * notasAlumno: se encarga de mostrarte las notas de cada alumno
 	 * @param notas[]: notas de un alumno
 	 */
 	public static void notasAlumno(int notas[][]) {

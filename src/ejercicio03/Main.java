@@ -7,6 +7,11 @@ package ejercicio03;
 public class Main {
 
 	/**
+	 * final int tabla[][]: tabla que se rellenara con numeros
+	 */
+	public static final int TABLA[][] = new int[5][5];
+	
+	/**
 	 * Creara una tabla de 5x5, y enlazara a las funciones de rellenar e imprimir
 	 * tabla
 	 * 
@@ -14,9 +19,8 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 
-		int tabla[][] = new int[5][5];
-		ModifTabla.rellenaTabla(tabla);
-		ModifTabla.imprimirTabla(tabla);
+		ModifTabla.rellenaTabla(TABLA);
+		ModifTabla.imprimirTabla(TABLA);
 
 	} // Fin Main
 

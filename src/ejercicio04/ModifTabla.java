@@ -25,8 +25,9 @@ public class ModifTabla {
      * @param tabla Matriz a imprimir
      */
     public static void imprimirTabla(int[][] tabla) {
-        if (tabla.length == 0 || tabla[0].length == 0)
-            return;
+        if (tabla.length == 0 || tabla[0].length == 0) {
+        	return;
+        }
 
         for (int i = 0; i < tabla.length; i++) {
             for (int j = 0; j < tabla[0].length; j++) {
