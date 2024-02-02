@@ -4,7 +4,7 @@ package ejercicio04;
  * Clase principal donde se llamaran a las demas funciones
  * @author Nestor Sanchez
  */
-public class Main {
+public class MainCode {
 
 	/**
 	 * final int tabla[][]: array que contendra la tabla de multiplicar

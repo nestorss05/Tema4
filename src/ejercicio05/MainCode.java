@@ -5,7 +5,7 @@ package ejercicio05;
  * 
  * @author Nestor Sanchez
  */
-public class Main {
+public class MainCode {
 
 	/**
 	 * int[][] tabla: array donde se guardaran los valores aleatorios generados
