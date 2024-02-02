@@ -4,7 +4,7 @@ package ejercicio03;
  * Clase principal: creara el array y enlazara funciones
  * @author Nestor Sanchez
  */
-public class Main {
+public class MainCode {
 
 	/**
 	 * final int tabla[][]: tabla que se rellenara con numeros
