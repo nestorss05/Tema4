@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author Nestor Sanchez
  * 
  */
-public class Main {
+public class MainCode {
 
 	/**
 	 * final int notas[][]: array donde se guardaran alumnos y notas
